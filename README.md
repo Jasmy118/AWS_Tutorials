@@ -1,4 +1,3 @@
-# scripturient
 # Create VPC in AWS
 Search VPC. Click VPC - Create VPC (Jas_VPC_1, 10.0.0.0/16, No IPv6 CIDR Block, Tenancy-Default) - Create.
 # Create Subnet
