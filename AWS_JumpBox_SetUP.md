@@ -7,7 +7,7 @@
   - Attach IGW_JumpBox to VPC_JumpBox
 # Step 4: Making the subnet in step 2 PUBLIC
   - Select Public_Subnet_JB - Select Route Table below - Click route table id - Select Routes(below) - Edit routes - Add Route(0.0.0.0/0, igw - of IGW_JumpBox)
-Note: Now Public_Subnet_JB is a public subnet
+  - Note: Now Public_Subnet_JB is a public subnet
 # Step 5: Create Subnet (Private)
   - Create a subnet - Private_Subnet_JB - 20.0.2.0/24
 # Step 6: Create NAT Instance (EC2 instance)
@@ -47,7 +47,7 @@ Note: eni - elastic network interface
   - JumpBox - Inbound rules are correct(SSH-port 22-from any source)
   - FI_Private_Instance - Inbound rules(SSH-port 22-from any source). This is not correct. We need to add more security. We need to edit.
     - Select FI_Private_Instance - Click SG_FI in description. In Inbound tab - Edit. Edit existing rule - Custom - sg - select security group of JumpBox (NAT_SG).
-Note : Now only the machines associated with jumpbox security group have access to the FI. So if jumpbox is not ON, FI is not accessible.
+  - Note : Now only the machines associated with jumpbox security group have access to the FI. So if jumpbox is not ON, FI is not accessible.
 # Step 12: Connect to jumpbox.
   - $ ssh -i "JumpBox_Key.pem" ec2-user@54.82.202.80
     - Connects successfully.
@@ -55,7 +55,7 @@ Note : Now only the machines associated with jumpbox security group have access 
   - Copying this key pair so that it can be used to connect to FI from JB. Run the following commad from local machine (cmd prompt):
   - $ scp -i JumpBox_Key.pem JumpBox_Key.pem ec2-user@54.82.202.80:J_Key.pem
   - Connect to JumpBox now - $ ssh -i "JumpBox_Key.pem" ec2-user@54.82.202.80
-  - $ls --> J_Key.pem
+  - $ ls --> J_Key.pem
 # Step 13: Connect to FI from JumpBox now:
   - $ ssh -i "J_Key.pem" ec2-user@20.0.2.24
   - Connection denied due to permission issues.
