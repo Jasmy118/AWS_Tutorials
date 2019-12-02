@@ -12,19 +12,19 @@ Note: Now Public_Subnet_JB is a public subnet
   - Create a subnet - Private_Subnet_JB - 20.0.2.0/24
 # Step 6: Create NAT Instance (EC2 instance)
   - Select EC2 - Select Launch Instance.
-    ##Choose AMI
+    - Choose AMI
     Community AMIs - Search amzn-ami-vpc-nat - Select ami-00a9d4a05375b2763.
-    ###Choose instance type
+    - Choose instance type
     Select Free Tier
-    ####Configure Instance
+    - Configure Instance
     Select VPC_JumpBox, Public_Subnet_JB, Auto-assign Public IP - Enable
-    ####Add Tags
+    - Add Tags
     Name-NAT_Instance_JB
-    ####Configure Security Group
+    - Configure Security Group
     Create new security group - NAT_SG, Security group for nat instance of jumpbox. Rule: SSH, custom - 0.0.0.0/0
-    ####Review and Launch
+    - Review and Launch
     Proceed without a key pair - if you never need to connect to this instance (You can also create new key pair)
-    ####Launch
+    - Launch
     (Public IP: 54.147.99.213)
 # Step 7: Creating JumpBox (EC2 instance)
   - Select EC2 - Select Launch Instance
