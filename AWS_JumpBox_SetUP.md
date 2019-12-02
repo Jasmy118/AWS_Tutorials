@@ -21,21 +21,21 @@ Note: Now Public_Subnet_JB is a public subnet
     - Launch : (Public IP: 54.147.99.213)
 # Step 7: Creating JumpBox (EC2 instance)
   - Select EC2 - Select Launch Instance
-    Choose AMI : Amazon Linux 2 AMI (HVM) Free Tier eligible
-    Choose Instance Type : Free Tier eligible
-    Configure Instance : Select VPC_JumpBox, Public_Subnet_JB, Auto-assign Public IP - Enable
-    Add Tags : Name, JumpBox
-    Configure Security Group: Create new security group - SG_JumpBox, Security group for jumpbox. Rule: SSH, custom - 0.0.0.0/0
-    Launch: Key pair: create a new key pair : JumpBox_Key
-    (Public IP : 54.82.202.80)
+    - Choose AMI : Amazon Linux 2 AMI (HVM) Free Tier eligible
+    - Choose Instance Type : Free Tier eligible
+    - Configure Instance : Select VPC_JumpBox, Public_Subnet_JB, Auto-assign Public IP - Enable
+    - Add Tags : Name, JumpBox
+    - Configure Security Group : Create new security group - SG_JumpBox, Security group for jumpbox. Rule: SSH, custom - 0.0.0.0/0
+    - Review and Launch: Key pair : create a new key pair : JumpBox_Key
+    - Launch : (Public IP : 54.82.202.80)
 # Step 8: Creating private instance(FI) (EC2 instance)
   - Select EC2 - Select Launch Instance
-    Choose AMI : Amazon Linux 2 AMI (HVM) Free Tier eligible
-    Choose Instance Type : Free Tier eligible
-    Configure Instance : Select VPC_JumpBox, Private_Subnet_JB, Auto-assign Public IP - Disable
-    Add Tags : Name, FI_Private_Instance
-    Configure Security Group: Create new security group - SG_FI, Security group for private instance. Rule: SSH, custom - 0.0.0.0/0
-    Launch: Key pair: choose existing key pair(same as jumpbox) : JumpBox_Key
+    - Choose AMI : Amazon Linux 2 AMI (HVM) Free Tier eligible
+    - Choose Instance Type : Free Tier eligible
+    - Configure Instance : Select VPC_JumpBox, Private_Subnet_JB, Auto-assign Public IP - Disable
+    - Add Tags : Name, FI_Private_Instance
+    - Configure Security Group: Create new security group - SG_FI, Security group for private instance. Rule: SSH, custom - 0.0.0.0/0
+    - Launch: Key pair: choose existing key pair(same as jumpbox) : JumpBox_Key
 # Step 9: Create Route table
   - If we check the Private_Subnet_JB, it is using the route table of the public subnet. We need a separate route table for the private subnet. 
   - Select VPC - Route Tables - Create route table - Private_Sub_RT_JB - Create.
@@ -46,11 +46,11 @@ Note: eni - elastic network interface
 # Step 11: Checking security group(inbound rules) of each instance
   - JumpBox - Inbound rules are correct(SSH-port 22-from any source)
   - FI_Private_Instance - Inbound rules(SSH-port 22-from any source). This is not correct. We need to add more security. We need to edit.
-    Select FI_Private_Instance - Click SG_FI in description. In Inbound tab - Edit. Edit existing rule - Custom - sg - select security group of JumpBox (NAT_SG).
+    - Select FI_Private_Instance - Click SG_FI in description. In Inbound tab - Edit. Edit existing rule - Custom - sg - select security group of JumpBox (NAT_SG).
 Note : Now only the machines associated with jumpbox security group have access to the FI. So if jumpbox is not ON, FI is not accessible.
 # Step 12: Connect to jumpbox.
   - $ ssh -i "JumpBox_Key.pem" ec2-user@54.82.202.80
-    Connects successfully.
+    - Connects successfully.
 # Step 13: Copy "JumpBox_Key.pem" file from local to remote (local to JB)
   - Copying this key pair so that it can be used to connect to FI from JB. Run the following commad from local machine (cmd prompt):
   - $ scp -i JumpBox_Key.pem JumpBox_Key.pem ec2-user@54.82.202.80:J_Key.pem
@@ -60,10 +60,10 @@ Note : Now only the machines associated with jumpbox security group have access 
   - $ ssh -i "J_Key.pem" ec2-user@20.0.2.24
   - Connection denied due to permission issues.
   - To view permission:
-    $ ls -l
+    - $ ls -l
   - To change permission:
-    $ chmod 400 J_Key.pem
-    (View permission) $ ls -l
+    - $ chmod 400 J_Key.pem
+    - (View permission) $ ls -l
 # Step 14: Ping google.com test from FI
   - Does not seem to work
   - Go To NAT_Instance_JB. Actions - Networking - Change Source/Dest Check - Disable.
