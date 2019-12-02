@@ -41,5 +41,5 @@ ping 34.206.42.82 - gets the reply.
 # Connect to the Instance
 Select instance J_EC2_1 - Connect.
 In cmdprompt, direct cmd to the path of the pem file -> ssh -i "JJ_KeyPair.pem" ec2-user@34.206.42.82
-
+![image of instance connect](Instance Connect.JPG)
 # Stop instance and release elastic IP
