@@ -5,3 +5,9 @@
 - In Jupiter(Anaconda Test env):
   - import pandas as pd
   - import pymysql
+  - host="mydbinstance.c8xo2pfnll3f.us-east-1.rds.amazonaws.com" #endpoint
+  - port=3306
+  - dbname="MyDB_1" 
+  - user="admin"
+  - password="admin1234"
+  - conn = pymysql.connect(host, user=user,port=port, passwd=password, db=dbname)
