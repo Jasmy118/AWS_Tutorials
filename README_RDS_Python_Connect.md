@@ -3,7 +3,7 @@
   - conda activate test
   - conda install pymysql
 ![image1](https://github.com/Jasmy118/scripturient/blob/Image/1%20install%20conda%20mysql.JPG)
-![image2](https://github.com/Jasmy118/scripturient/blob/master/2%20install%20conda%20mysql.JPG)
+![image2](https://github.com/Jasmy118/scripturient/blob/Image/2%20install%20conda%20mysql.JPG)
 # Step 2
 - In Jupiter(Anaconda Test env) :
   - import pandas as pd
