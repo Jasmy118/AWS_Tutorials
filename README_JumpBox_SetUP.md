@@ -1,4 +1,4 @@
-![image1](https://github.com/Jasmy118/scripturient/blob/master/Assignment%20JumpBox.jpg)
+![image1](https://github.com/Jasmy118/scripturient/blob/Image/Assignment%20JumpBox.jpg)
 # Step 1: Create VPC
   - Create a jumpbox VPC - VPC_JumpBox - 20.0.0.0/16
 # Step 2: Create Subnet (Public)
@@ -52,13 +52,13 @@ Note: eni - elastic network interface
 # Step 12: Connect to jumpbox.
   - $ ssh -i "JumpBox_Key.pem" ec2-user@54.82.202.80
     - Connects successfully.
-![image2](https://github.com/Jasmy118/scripturient/blob/master/Connected%20to%20JumpBox.JPG)
+![image2](https://github.com/Jasmy118/scripturient/blob/Image/Connected%20to%20JumpBox.JPG)
 # Step 13: Copy "JumpBox_Key.pem" file from local to remote (local to JB)
   - Copying this key pair so that it can be used to connect to FI from JB. Run the following commad from local machine (cmd prompt):
   - $ scp -i JumpBox_Key.pem JumpBox_Key.pem ec2-user@54.82.202.80:J_Key.pem
   - Connect to JumpBox now - $ ssh -i "JumpBox_Key.pem" ec2-user@54.82.202.80
   - $ ls --> J_Key.pem
-![image3](https://github.com/Jasmy118/scripturient/blob/master/Copy%20keypair%20to%20JB.JPG)
+![image3](https://github.com/Jasmy118/scripturient/blob/Image/Copy%20keypair%20to%20JB.JPG)
 # Step 13: Connect to FI from JumpBox now:
   - $ ssh -i "J_Key.pem" ec2-user@20.0.2.24
   - Connection denied due to permission issues.
@@ -69,7 +69,7 @@ Note: eni - elastic network interface
     - (View permission) $ ls -l
   - $ ssh -i "J_Key.pem" ec2-user@20.0.2.24
     - Now connected to FI
-![image4](https://github.com/Jasmy118/scripturient/blob/master/Connected%20to%20FI.JPG)
+![image4](https://github.com/Jasmy118/scripturient/blob/Image/Connected%20to%20FI.JPG)
 # Step 14: Ping google.com test from FI
   - Does not seem to work
   - Go To NAT_Instance_JB. Actions - Networking - Change Source/Dest Check - Disable.
@@ -77,5 +77,5 @@ Note: eni - elastic network interface
   - Select NAT_Instance_JB - Select NAT_SG - Inbound - Edit - All Traffic, Custom, sg - private instance SG.
     Now NAT instance allow all traffic to pass through but from FI.
   - $ ping google.com now works
-![image5](https://github.com/Jasmy118/scripturient/blob/master/PingGoogle_FI.JPG)
+![image5](https://github.com/Jasmy118/scripturient/blob/Image/PingGoogle_FI.JPG)
 # Step 15: Stop all instances.
