@@ -23,5 +23,5 @@
 	- BackUp - disable
 	- Maintenance - leave it as it is
 - Create Database.
-![image1](https://github.com/Jasmy118/scripturient/blob/master/1%20DB%20Created.JPG)
-![image2](https://github.com/Jasmy118/scripturient/blob/master/2%20DB%20Created.JPG)
+![image1](https://github.com/Jasmy118/scripturient/blob/Image/1%20DB%20Created.JPG)
+![image2](https://github.com/Jasmy118/scripturient/blob/Image/2%20DB%20Created.JPG)
