@@ -31,7 +31,7 @@ Open MySQL Workbench. Add MySQL Connections.
 	- Username: admin
 	- Password: admin1234
 	- Test Connection - OK
-# Step 13
+# Step 3
   - Double click on the new MySQLConnection.
   - View - panels- sidebar(if side bar is hidden)
 # Result
