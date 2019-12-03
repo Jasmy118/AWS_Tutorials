@@ -29,8 +29,8 @@ Database authentication :  password authentication
 # Step 10
 Additional configuration:
   - Initial database name - MyDB_1
-	- BackUp - disable
-	- Maintenance - leave it as it is
+  - BackUp - disable
+  - Maintenance - leave it as it is
 # Step 11
 Create Database.
 
