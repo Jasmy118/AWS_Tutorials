@@ -43,5 +43,5 @@
 - Select instance J_EC2_1 - Connect.
 - In cmdprompt, direct cmd to the path of the pem file -> 
     - ssh -i "JJ_KeyPair.pem" ec2-user@34.206.42.82
-![image of instance connect](https://github.com/Jasmy118/scripturient/blob/master/Instance%20Connect.JPG)
+![image of instance connect](https://github.com/Jasmy118/scripturient/blob/Image/Instance%20Connect.JPG)
 # Step 10: Stop instance and release elastic IP
