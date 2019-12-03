@@ -1,4 +1,4 @@
-# Step 1
+# Step 1 : Connecting RDS through an interface (Python)
 - Run Anaconda prompt as administrator. Activate test environment. Install pymysql.
   - conda activate test
   - conda install pymysql
