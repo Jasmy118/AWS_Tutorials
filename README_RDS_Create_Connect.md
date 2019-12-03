@@ -35,3 +35,4 @@ Open MySQL Workbench. Add MySQL Connections.
   - Double click on the new MySQLConnection.
   - View - panels- sidebar(if side bar is hidden)
 # Result
+![image1](https://github.com/Jasmy118/scripturient/blob/master/Assignment%20JumpBox.jpg)
