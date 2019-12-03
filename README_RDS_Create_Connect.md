@@ -38,3 +38,10 @@
 - View - panels- sidebar(if side bar is hidden)
 # Result
 ![image4](https://github.com/Jasmy118/scripturient/blob/master/4%20DB.JPG)
+# Step 4
+- Create a table
+- Insert data
+- Display data
+![image5](https://github.com/Jasmy118/scripturient/blob/master/5%20TableCreate_WorkBench.jpg)
+![image6](https://github.com/Jasmy118/scripturient/blob/master/6%20TableInsertDataWorkbench.JPG)
+![image7](https://github.com/Jasmy118/scripturient/blob/master/7%20Display%20DB%20data%20in%20workbench.JPG)
