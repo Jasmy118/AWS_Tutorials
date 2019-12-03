@@ -16,11 +16,11 @@
   - user="admin"
   - password="admin1234"
   - conn = pymysql.connect(host, user=user,port=port, passwd=password, db=dbname)
+![image3](https://github.com/Jasmy118/scripturient/blob/master/3%20Connect%20to%20RDS%20and%20retrieve%20data%20in%20python.JPG)
 ![image4](https://github.com/Jasmy118/scripturient/blob/master/4%20RDS%20connected%20with%20python%20and%20workbench.JPG)
 # Step 4
 - Display data from the table :
   - pd.read_sql('SELECT * FROM Planet', con=conn)
-![image3](https://github.com/Jasmy118/scripturient/blob/master/3%20Connect%20to%20RDS%20and%20retrieve%20data%20in%20python.JPG)
 # Step 5
 -Inserting data :
   - cursor = conn.cursor()
