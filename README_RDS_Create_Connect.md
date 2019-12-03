@@ -23,16 +23,18 @@
 	- BackUp - disable
 	- Maintenance - leave it as it is
 - Create Database.
-
+![image1](https://github.com/Jasmy118/scripturient/blob/master/1%20DB%20Created.JPG)
+![image2](https://github.com/Jasmy118/scripturient/blob/master/2%20DB%20Created.JPG)
 # Step 2 : Connecting through an interface (MySQL Workbench)
-Open MySQL Workbench. Add MySQL Connections.
+- Open MySQL Workbench. Add MySQL Connections.
 	- Connection name : JDb1
 	- Hostame : mydbinstance.c8xo2pfnll3f.us-east-1.rds.amazonaws.com
 	- Username: admin
 	- Password: admin1234
 	- Test Connection - OK
+![image3](https://github.com/Jasmy118/scripturient/blob/master/3%20Connection%20successful.JPG)
 # Step 3
-  - Double click on the new MySQLConnection.
-  - View - panels- sidebar(if side bar is hidden)
+- Double click on the new MySQLConnection.
+- View - panels- sidebar(if side bar is hidden)
 # Result
-![image1](https://github.com/Jasmy118/scripturient/blob/master/Assignment%20JumpBox.jpg)
+![image4](https://github.com/Jasmy118/scripturient/blob/master/4%20DB.JPG)
