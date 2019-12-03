@@ -1,9 +1,7 @@
-# Step 1
-In AWS, search RDS. Choose Create Database.
-# Step 2
-Choose a database creation method : Standard create.
-# Step 3
-Engine options : My SQL, 5.7.22
+# Step 1 : 
+	- In AWS, search RDS. Choose Create Database.
+	- Choose a database creation method : Standard create.
+	- Engine options : My SQL, 5.7.22
 # Step 4
 Templates : Free Tier
 # Step 5
