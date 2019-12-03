@@ -3,9 +3,9 @@
 	- Choose a database creation method : Standard create.
 	- Engine options : My SQL, 5.7.22
 # Step 4
-Templates : Free Tier
+	- Templates : Free Tier
 # Step 5
-Settings:
+	= Settings:
   - DB Instance identifier - MyDBInstance
 # Step 6
 Credential setting:
