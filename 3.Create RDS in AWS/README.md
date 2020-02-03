@@ -1,4 +1,4 @@
-# Step 1 : Create RDS (Db)
+## Step 1 : Create RDS (Db)
 - In AWS, search RDS. Choose Create Database.
 - Choose a database creation method : Standard create.
 - Engine options : My SQL, 5.7.22
