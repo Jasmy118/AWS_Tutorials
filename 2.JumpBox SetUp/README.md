@@ -1,3 +1,4 @@
+# Setting up JumpBox
 ![image1](https://github.com/Jasmy118/scripturient/blob/Image/Assignment%20JumpBox.jpg)
 ## Step 1: Create VPC
   - Create a jumpbox VPC - VPC_JumpBox - 20.0.0.0/16
