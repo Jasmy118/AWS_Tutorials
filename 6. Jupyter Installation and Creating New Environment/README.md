@@ -1,14 +1,10 @@
 # 1.	Create Ubuntu 18 instance.
-
 # 2.	Connect to Ubuntu instance:
-
 - $ ssh -i "JUbuntu_KeyPair.pem" ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com
-
 # 3.	Check if Python/Python3 installed:
 - $ python
 - $ python3
 - $ python3 -V
-
 # 4.	Create python script locally and move to the EC2 created:
 - $ scp -i JUbuntu_KeyPair.pem scriptForUbuntu.py ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com:scriptForUbuntu.py
   - ($ scp -i KeyPairName file_to_transfer EC2_Machine : filename_to_show_in_EC2) --> pem file and file to be transferred should be in current working directory.
@@ -77,10 +73,10 @@ Creating new environment:
 - $ pip3 install pandas
 - $ pip3 freeze > jTestEnvFreeze.txt --> lists all installations into a text file
 - $ cat jTestEnvFreeze.txt --> display contents
-Display the environment name in jupyter home page (Now inside jTestEnv):
+  Display the environment name in jupyter home page (Now inside jTestEnv):
 - $ pip3 install ipykernel
 - $ python3 -m ipykernel install - -user - -name=JasTestEnvironment
-Refresh the home page and new environment name wil be displayed.
+  Refresh the home page and new environment name wil be displayed.
 Select JasTestEnvironment and in the new notebook:
 - import pandas --> will not give error as pandas is installed in this environment
 
