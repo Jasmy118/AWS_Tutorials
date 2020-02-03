@@ -202,10 +202,12 @@ https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 
 After installation:
 - $ conda
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zzb.png)
 
 if it shows, conda command not found open a new terminal.
 - $ conda
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zzc.png)
 - $ conda create –name JCondaEnv3 python=3 --> creates new environment
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zzd.png)
