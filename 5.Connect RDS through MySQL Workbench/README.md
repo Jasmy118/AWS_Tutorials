@@ -1,4 +1,5 @@
-# Step 1 : Connecting RDS through an interface (MySQL Workbench)
+# Connecting RDS through an interface (MySQL Workbench)
+## Step 1
 - Open MySQL Workbench. Add MySQL Connections.
 	- Connection name : JDb1
 	- Hostame : mydbinstance.c8xo2pfnll3f.us-east-1.rds.amazonaws.com
@@ -6,12 +7,12 @@
 	- Password: admin1234
 	- Test Connection - OK
 ![image3](https://github.com/Jasmy118/scripturient/blob/Image/3%20Connection%20successful.JPG)
-# Step 2
+## Step 2
 - Double click on the new MySQLConnection.
 - View - panels- sidebar(if side bar is hidden)
-# Result
+## Result
 ![image4](https://github.com/Jasmy118/scripturient/blob/Image/4%20DB.JPG)
-# Step 3
+## Step 3
 - Create a table
 - Insert data
 - Display data
