@@ -1,7 +1,7 @@
 # Jupyter Installation and creating New Environment in an EC2 instance(Ubuntu)
 ## 1.	Create Ubuntu 18 instance.
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/1.jpg)
-![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/2.jpg)
+![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/2.png)
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/3.jpg)
 ## 2.	Connect to Ubuntu instance:
 - $ ssh -i "JUbuntu_KeyPair.pem" ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com
