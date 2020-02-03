@@ -73,10 +73,10 @@ Creating new environment:
 - $ pip3 install pandas
 - $ pip3 freeze > jTestEnvFreeze.txt --> lists all installations into a text file
 - $ cat jTestEnvFreeze.txt --> display contents
-Display the environment name in jupyter home page (Now inside jTestEnv):
+  - Display the environment name in jupyter home page (Now inside jTestEnv):
 - $ pip3 install ipykernel
 - $ python3 -m ipykernel install - -user - -name=JasTestEnvironment
-Refresh the home page and new environment name wil be displayed.
+  - Refresh the home page and new environment name wil be displayed.
 
 Select JasTestEnvironment and in the new notebook:
 - import pandas --> will not give error as pandas is installed in this environment
@@ -88,6 +88,7 @@ Nested environment: An environment inside another environment.
 - $ pew ls
 - $ pew rm jTestEnvDuplicate --> removes jTestEnvDuplicate
 - $ pew ls
+
 Creating an environment outside jTestEnv:
 - $ exit --> exits jTestEnv
 - $ pew new jTestEnvDuplicate
@@ -96,12 +97,13 @@ Creating an environment outside jTestEnv:
 Display the environment name in jupyter home page (Now inside jTestEnvDuplicate):
 - $ pip3 install ipykernel
 - $ python3 -m ipykernel install - -user - -name=JasTestEnvironmentDuplicate
-Refresh the home page and open a new notebook in 'JasTestEnvironmentDuplicate' and import pandas:
+  - Refresh the home page and open a new notebook in 'JasTestEnvironmentDuplicate' and import pandas:
 - import pandas --> gives error because pandas is not installed in this environment.
 
 Copying installations from 'jTestEnv' (Now in jTestEnvDuplicate):
 - $ ls
-- $ pip3 install -r jTestEnvFreeze.txt --> computes all the installations in this txt file
+- $ pip3 install -r jTestEnvFreeze.txt --> computes all the installations in this txt file.
+
 Now import pandas in the previously created notebook and it works.
 
 # 12.	Creating new environment in Jupyter with conda.
@@ -115,18 +117,23 @@ https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 - $ curl -O https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh --> downloads
 - $ ls
 - $ bash Anaconda3-2019.10-Linux-x86_64.sh (Tip : type bash A+tab -- completes the file name)
+
 After installation:
 - $ conda
+
 if it shows, conda command not found open a new terminal.
 - $ conda
 - $ conda create –name JCondaEnv3 python=3 --> creates new environment
 - $ conda activate JCondaEnv3--> To activate the new environment
 
 With conda we can create environment in any version of python.
+
 Displaying the environment created with conda in Jupyter home page:
 - $ pip3 install ipykernel
 - $ ipython kernel install - -user - -name=JasCondaEnv
+
 Refresh Jupyter home page and new environment name appears. Open a new notebook in this environment and import pandas --> gives error as it is not installed. So install pandas in JCondaEnv3:
 - $ conda install pandas
+
 Now import pandas in the note book and it works.
 Note: $ conda update  -n base -c defaults conda --> to update conda version
