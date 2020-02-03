@@ -29,6 +29,7 @@
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9g.png)
 ## 5.	Run the python script in the EC2 created:
 - $ python3 scriptForUbuntu.py
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9h.png)
 ## 6.	Check if pip/pip3 installed:
 - $ pip3
@@ -46,6 +47,7 @@ Install pip:
 
 Check pip3 version:
 - $ pip3 -V
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9l.png)
 ## 7.	Install Jupyter
 - $ sudo pip3 install jupyter
@@ -61,7 +63,7 @@ Open jupyter notebook:
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9r.png)
 
 Open the link in browser. Cannot be reached because port is not opened.
-![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9o.png)
+![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9s.png)
 
 Edit Inbound Rules of the Ubuntu instance.
   - Add Rule
@@ -85,6 +87,7 @@ Open jupyter notebook with the new link obtained (after changing IP to the IP of
 - $ pwd --> present working directory
 - $ ls --> list all files/folders in the pwd
 - $ python3 scriptForUbuntu.py
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9x.png)
 
 Shut down the terminal and the jupyter will be unavailable. (CTRL+C)
