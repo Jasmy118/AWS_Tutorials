@@ -8,7 +8,7 @@
 - $ python3 -V
 4.	Create python script locally and moving to distant machine
 - $ scp -i JUbuntu_KeyPair.pem scriptForUbuntu.py ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com:scriptForUbuntu.py
-  ($ scp -i KeyPairName file_to_transfer EC2_Machine : filename_to_show_in_EC2) --> pem file and file to be transferred should be in current working directory.
+  -($ scp -i KeyPairName file_to_transfer EC2_Machine : filename_to_show_in_EC2) --> pem file and file to be transferred should be in current working directory.
 5.	Run the python script in distant machine
 - $ python3 scriptForUbuntu.py
 6.	Check if pip/pip3 installed
