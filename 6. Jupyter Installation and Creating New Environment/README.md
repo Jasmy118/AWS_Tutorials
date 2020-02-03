@@ -1,20 +1,20 @@
-1.	Create Ubuntu 18 instance.
+# 1.	Create Ubuntu 18 instance.
 
-2.	Connect to Ubuntu instance:
+# 2.	Connect to Ubuntu instance:
 
 - $ ssh -i "JUbuntu_KeyPair.pem" ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com
 
-3.	Check if Python/Python3 installed:
+# 3.	Check if Python/Python3 installed:
 - $ python
 - $ python3
 - $ python3 -V
 
-4.	Create python script locally and move to the EC2 created:
+# 4.	Create python script locally and move to the EC2 created:
 - $ scp -i JUbuntu_KeyPair.pem scriptForUbuntu.py ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com:scriptForUbuntu.py
   - ($ scp -i KeyPairName file_to_transfer EC2_Machine : filename_to_show_in_EC2) --> pem file and file to be transferred should be in current working directory.
-5.	Run the python script in the EC2 created:
+# 5.	Run the python script in the EC2 created:
 - $ python3 scriptForUbuntu.py
-6.	Check if pip/pip3 installed:
+# 6.	Check if pip/pip3 installed:
 - $ pip3
 - $ pip3 -V
 If not installed, to install pip3, first we need to do the update.
@@ -23,7 +23,7 @@ Install pip:
 - $ sudo apt-get install python3-pip
 Check pip3 version:
 - $ pip3 -V
-7.	Install Jupyter
+# 7.	Install Jupyter
 - $ sudo pip3 install jupyter
 Open jupyter notebook:
 - $ jupyter notebook
@@ -40,19 +40,19 @@ Access the link again. If still not accessible:
 - CTRL+C to shut down the jupyter notebook server.
 - $ jupyter notebook --ip=0.0.0.0 --> associates with all possible IPs
 Open jupyter notebook with the new link obtained (after changing IP to the IP of the instance)
-8.	Select new terminal from the jupyter browser and run python script there.
+# 8.	Select new terminal from the jupyter browser and run python script there.
 (Tip: type beginning of file name + tab --> gives full file name)
 - $ pwd --> present working directory
 - $ ls --> list all files/folders in the pwd
 - $ python3 scriptForUbuntu.py
 Shut down the terminal and the jupyter will be unavailable. (CTRL+C)
-9.	NOHUP : Jupyter to work even if we shut down the terminal. Connect to EC2 and follow the below commands:
+# 9.	NOHUP : Jupyter to work even if we shut down the terminal. Connect to EC2 and follow the below commands:
 - $ nohup jupyter notebook --ip=0.0.0.0&
 - $ ls --> contains nohup.out
 Display the content of a file:
 - $ cat nohup.out --> Displays the link to the jupyter notebook
 Now JupyterNotebook will work even after closing the prompt
-10.	Creating a new environment in Jupyter with pew.
+# 10.	Creating a new environment in Jupyter with pew.
 Check python3 installation:
 - $ python3
 - $ pip3 install pew
@@ -84,7 +84,7 @@ Refresh the home page and new environment name wil be displayed.
 Select JasTestEnvironment and in the new notebook:
 - import pandas --> will not give error as pandas is installed in this environment
 
-11.	Creating a new environment in jupyter with pew and copying all installations from jTestEnv (environment created in step 10).
+# 11.	Creating a new environment in jupyter with pew and copying all installations from jTestEnv (environment created in step 10).
 Nested environment: An environment inside another environment.
 - $ jTestEnv…$ pew new jTestEnvDuplicate
 - $ exit --> exits jTestEnvDuplicate and will be in jTestEnv
@@ -107,7 +107,7 @@ Copying installations from 'jTestEnv' (Now in jTestEnvDuplicate):
 - $ pip3 install -r jTestEnvFreeze.txt --> computes all the installations in this txt file
 Now import pandas in the previously created notebook and it works.
 
-12.	Creating new environment in Jupyter with conda.
+# 12.	Creating new environment in Jupyter with conda.
 Check python3 installation:
 - $ python3 -V
 
