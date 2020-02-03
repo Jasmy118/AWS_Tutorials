@@ -19,11 +19,13 @@
 - $ python
 - $ python3
 - $ python3 -V
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9e.png)
 ## 4.	Create python script locally and move to the EC2 created:
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9f.png)
 - $ scp -i JUbuntu_KeyPair.pem scriptForUbuntu.py ubuntu@ec2-34-230-57-225.compute-1.amazonaws.com:scriptForUbuntu.py
   - ($ scp -i KeyPairName file_to_transfer EC2_Machine : filename_to_show_in_EC2) --> pem file and file to be transferred should be in current working directory.
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9g.png)
 ## 5.	Run the python script in the EC2 created:
 - $ python3 scriptForUbuntu.py
@@ -31,6 +33,7 @@
 ## 6.	Check if pip/pip3 installed:
 - $ pip3
 - $ pip3 -V
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9i.png)
 
 If not installed, to install pip3, first we need to do the update.
