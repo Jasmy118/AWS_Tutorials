@@ -34,10 +34,10 @@ Open jupyter notebook:
 Open the link in browser. Cannot be reached because port is not opened.
 
 Edit Inbound Rules of the Ubuntu instance.
-  Add Rule - 
-    Type = Custom TCP Rule
-    Port Range = 8888
-    Source = Anywhere, 0.0.0.0/0
+  -> Add Rule - 
+    - Type = Custom TCP Rule
+    - Port Range = 8888
+    - Source = Anywhere, 0.0.0.0/0
 
 Access the link again. If still not accessible:
 - CTRL+C to shut down the jupyter notebook server.
