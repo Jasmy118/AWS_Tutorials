@@ -132,6 +132,7 @@ Creating new environment:
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zh.png)
 - $ pip3 freeze --> lists all installations
 - $ pip3 install pandas
+
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zi.png)
 ![image.jpg](https://github.com/Jasmy118/AWS_Tutorials/blob/master/6.%20Jupyter%20Installation%20and%20Creating%20New%20Environment/Images/9zj.png)
 - $ pip3 freeze > jTestEnvFreeze.txt --> lists all installations into a text file
