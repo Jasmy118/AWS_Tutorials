@@ -73,10 +73,10 @@ Creating new environment:
 - $ pip3 install pandas
 - $ pip3 freeze > jTestEnvFreeze.txt --> lists all installations into a text file
 - $ cat jTestEnvFreeze.txt --> display contents
-  Display the environment name in jupyter home page (Now inside jTestEnv):
+  - Display the environment name in jupyter home page (Now inside jTestEnv):
 - $ pip3 install ipykernel
 - $ python3 -m ipykernel install - -user - -name=JasTestEnvironment
-  Refresh the home page and new environment name wil be displayed.
+  - Refresh the home page and new environment name wil be displayed.
 Select JasTestEnvironment and in the new notebook:
 - import pandas --> will not give error as pandas is installed in this environment
 
